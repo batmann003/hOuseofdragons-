@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House of the Dragon - Landing Page</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',sans-serif;line-height:1.6;background:#0d0d0d;color:#eee}
+    header{background:url('https://wallpapercave.com/wp/wp10247042.jpg') center/cover no-repeat;
+            height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;position:relative}
+    header::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6)}
+    header .content{position:relative;z-index:1}
+    header h1{font-size:3rem;margin-bottom:1rem;color:#f5c518}
+    header p{font-size:1.2rem;margin-bottom:1.5rem}
+    header button{padding:0.8rem 2rem;font-size:1rem;border:none;border-radius:5px;background:#f5c518;color:#000;cursor:pointer;font-weight:bold;transition:0.3s}
+    header button:hover{background:#fff;color:#000}
+
+    section{padding:4rem 2rem;max-width:1200px;margin:auto}
+    .grid{display:grid;gap:2rem}
+    .posters{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+    .posters img{width:100%;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.6);transition:0.3s}
+    .posters img:hover{transform:scale(1.05)}
+
+    .features{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+    .feature{background:#1a1a1a;padding:2rem;border-radius:10px;text-align:center;box-shadow:0 4px 8px rgba(0,0,0,0.5)}
+    .feature h3{color:#f5c518;margin-bottom:1rem}
+
+    .pricing{text-align:center}
+    .price-card{background:#1a1a1a;padding:2rem;margin:1rem auto;border-radius:10px;max-width:400px;box-shadow:0 4px 8px rgba(0,0,0,0.5)}
+    .price-card h2{color:#f5c518;margin-bottom:1rem}
+    .price-card p{margin-bottom:1rem}
+    .price-card button{padding:0.8rem 2rem;font-size:1rem;border:none;border-radius:5px;background:#f5c518;color:#000;cursor:pointer;font-weight:bold;transition:0.3s}
+    .price-card button:hover{background:#fff;color:#000}
+
+    /* Carousel */
+    .carousel{position:relative;overflow:hidden;width:100%;max-width:900px;margin:3rem auto;text-align:center}
+    .carousel h2{color:#f5c518;margin-bottom:2rem}
+    .carousel-track{display:flex;transition:transform 0.5s ease}
+    .character{min-width:100%;padding:2rem}
+    .character img{width:250px;height:350px;object-fit:cover;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.6)}
+    .character h3{margin-top:1rem;color:#f5c518}
+    .character p{font-size:0.9rem;margin-top:0.5rem}
+    .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:#f5c518;border:none;padding:1rem;cursor:pointer;border-radius:50%;font-size:1.5rem}
+    .carousel-btn:hover{background:#f5c518;color:#000}
+    .prev{left:10px}
+    .next{right:10px}
+
+    footer{text-align:center;padding:2rem;background:#111;color:#aaa;margin-top:2rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="content">
+      <h1>House of the Dragon</h1>
+      <p>The epic saga of House Targaryen begins. Witness fire, blood, and the rise of dragons.</p>
+      <button>Watch Now</button>
+    </div>
+  </header>
+
+  <section>
+    <h2 style="text-align:center;margin-bottom:2rem;color:#f5c518">Popular Episodes</h2>
+    <div class="grid posters">
+      <img src="https://wallpapercave.com/wp/wp11527509.jpg" alt="Episode 1">
+      <img src="https://wallpapercave.com/wp/wp11527515.jpg" alt="Episode 2">
+      <img src="https://wallpapercave.com/wp/wp11527518.jpg" alt="Episode 3">
+      <img src="https://wallpapercave.com/wp/wp11527522.jpg" alt="Episode 4">
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;margin-bottom:2rem;color:#f5c518">Why Watch?</h2>
+    <div class="grid features">
+      <div class="feature">
+        <h3>🔥 Dragons & Battles</h3>
+        <p>Experience breathtaking CGI dragons and epic medieval wars that shape Westeros.</p>
+      </div>
+      <div class="feature">
+        <h3>👑 Royal Intrigue</h3>
+        <p>Witness the power struggles, betrayals, and politics of House Targaryen.</p>
+      </div>
+      <div class="feature">
+        <h3>🎭 Stunning Performances</h3>
+        <p>A brilliant cast brings George R.R. Martin's story to life with depth and intensity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Character Carousel -->
+  <section class="carousel">
+    <h2>Meet the Characters</h2>
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel-track">
+      <div class="character">
+        <img src="https://wallpapercave.com/wp/wp11440013.jpg" alt="Rhaenyra Targaryen">
+        <h3>Princess Rhaenyra Targaryen</h3>
+        <p>The Realm's Delight, heir to the Iron Throne, strong and determined.</p>
+      </div>
+      <div class="character">
+        <img src="https://wallpapercave.com/wp/wp11440032.jpg" alt="Daemon Targaryen">
+        <h3>Prince Daemon Targaryen</h3>
+        <p>The Rogue Prince, fearless warrior, rider of Caraxes the dragon.</p>
+      </div>
+      <div class="character">
+        <img src="https://wallpapercave.com/wp/wp11440020.jpg" alt="Alicent Hightower">
+        <h3>Alicent Hightower</h3>
+        <p>Queen of the Seven Kingdoms, driven by duty and family legacy.</p>
+      </div>
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </section>
+
+  <section class="pricing">
+    <h2 style="color:#f5c518;margin-bottom:2rem">Choose Your Plan</h2>
+    <div class="price-card">
+      <h2>Premium Access</h2>
+      <p>Stream all episodes in Full HD with exclusive behind-the-scenes content.</p>
+      <h3>$9.99 / month</h3>
+      <button>Subscribe Now</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 House of the Dragon | HBO</p>
+  </footer>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let index = 0;
+
+    function updateCarousel(){
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click',()=>{
+      index = (index+1) % track.children.length;
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener('click',()=>{
+      index = (index-1+track.children.length) % track.children.length;
+      updateCarousel();
+    });
+  </script>
+</body>
+</html>
